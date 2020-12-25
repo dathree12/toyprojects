@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>다스리의 연하장</title>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <meta property="og:image" content="https://images-na.ssl-images-amazon.com/images/I/81Lg4ZOrDeL.jpg"
+    <meta property="og:title" content="다스리의 연하장">
+    <meta property="og:description" content="2020을 보내고">
+
+    <!-- 파비콘 설정(조그만 아이콘) -->
+    <link rel="shortcut icon" href="https://www.freepngimg.com/download/christmas/30455-4-christmas-tree-image.png">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Nanum Pen Script', cursive;
+           
+        }
+        body {
+            background-color: #9b070f;
+        }
+        .envelope {
+            background-size: cover;
+            background-position: center;
+
+            width: 200px;
+            height: 200px;
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align : center;
+        }
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTY4OTA4MzI0ODc4NjkwMDAw%2Fchristmas-tree-gettyimages-1072744106.jpg');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            width: 400px;
+            color: white;
+            margin: auto;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            background-color: ivory;
+            color: brown;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            
+            }
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+}
+    </style>
+
+</head>
+
+
+<body>
+<div class="letter-close">
+    <div class="envelope" onclick="open_letter()"></div>
+    <h2 class="envelope-msg">봉투를 열어봐!</h2>
+</div>
+
+<div class="letter-open">
+    <div class="rtan" onclick="go_rtan()"></div>
+    <h1>2020년 수고 많았어!</h1>
+
+    <div class="messagebox">
+        안녕 친구 메리크리스마스! <br />
+        올해 이런저런 일이 많았는데 <br />
+        너 덕분에 하나도 힘들지 않았어 <br />
+        연말에 다 같이 못 봐서 아쉽다 <br />
+        남은 2020년도 잘 마무리 하고 <br />
+        2021년에는 행복한 한해가 되길 바랄게~ <br />
+        Merry Christmas~ And A Happy New Year❤<br />
+        <p class="from">2020.12.25 다스리가</p>
+    </div>
+</div>
+
+<script>
+    function open_letter() {
+        document.getElementsByClassName("letter-close")[0].style.display = 'none'
+    document.getElementsByClassName("letter-open")[0].style.display = 'block'
+}
+
+    function go_rtan() {
+        alert('2021년에는 행운만 가득하길~');
+}
+</script>
+
+
+</body>
+</html>
